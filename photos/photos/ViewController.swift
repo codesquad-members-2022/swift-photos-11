@@ -16,7 +16,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: "cell1", for: indexPath)
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "albumCell", for: indexPath)
+        let r = CGFloat.random(in: 0...1)
+        let g = CGFloat.random(in: 0...1)
+        let b = CGFloat.random(in: 0...1)
+        let backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1.0)
+        cell.contentView.backgroundColor = backgroundColor
+        return cell
     }
     
 
@@ -24,7 +31,5 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
 
