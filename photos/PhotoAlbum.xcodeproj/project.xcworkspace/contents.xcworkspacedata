@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/jsj/Documents/GitHub/origin-swift-photos-11/photos/PhotoAlbum.xcodeproj">
    </FileRef>
 </Workspace>
