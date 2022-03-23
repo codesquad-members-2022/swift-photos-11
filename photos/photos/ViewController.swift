@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Photos
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     let cellCount = 40
@@ -33,3 +34,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
 }
 
+extension PHAsset {
+  func getAssetThumbnail() -> UIImage {
+    let manager = PHImageManager.default()
+    let option = PHImageRequestOptions()
+    var thumbnail = UIImage()
+      option.isSynchronous = true
+    manager.requestImage(for: self,
+                         targetSize: CGSize(width: 100.0, height: 100.0),
+                            contentMode: .aspectFit,
+                            options: option,
+                            resultHandler: {(result, info) -> Void in thumbnail = result!
+    })
+    return thumbnail
+  }
+}
