@@ -11,6 +11,7 @@ import Photos
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     let cellCount = 40
     
+    @IBOutlet weak var collectionView: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cellCount
