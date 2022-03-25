@@ -15,6 +15,7 @@
 		6FD9ACE227E8175F00711EE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9ACE027E8175F00711EE6 /* LaunchScreen.storyboard */; };
 		6FD9ACED27E8175F00711EE6 /* photosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD9ACEC27E8175F00711EE6 /* photosTests.swift */; };
 		6FD9ACF827E8175F00711EE6 /* photosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD9ACF727E8175F00711EE6 /* photosUITests.swift */; };
+		F5CB30B427ECF62A00E12F1D /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CB30B327ECF62A00E12F1D /* AlbumCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6FD9ACF327E8175F00711EE6 /* PhotoAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD9ACF727E8175F00711EE6 /* photosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photosUITests.swift; sourceTree = "<group>"; };
 		6FD9ACF927E8175F00711EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5CB30B327ECF62A00E12F1D /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				6FD9ACDE27E8175F00711EE6 /* Assets.xcassets */,
 				6FD9ACE027E8175F00711EE6 /* LaunchScreen.storyboard */,
 				6FD9ACE327E8175F00711EE6 /* Info.plist */,
+				F5CB30B327ECF62A00E12F1D /* AlbumCell.swift */,
 			);
 			path = photos;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				6FD9ACDA27E8175A00711EE6 /* ViewController.swift in Sources */,
 				6FD9ACD627E8175A00711EE6 /* AppDelegate.swift in Sources */,
 				6FD9ACD827E8175A00711EE6 /* SceneDelegate.swift in Sources */,
+				F5CB30B427ECF62A00E12F1D /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
