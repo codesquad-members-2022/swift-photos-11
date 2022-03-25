@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import photos
+@testable import PhotoAlbum
 
 class photosTests: XCTestCase {
 
@@ -30,4 +30,14 @@ class photosTests: XCTestCase {
         }
     }
 
+    func testParseDoodles() throws {
+        let service = DoodleFileManager()
+        let result = service.readJson()
+        switch result {
+        case .success(_):
+            XCTAssert(true, "json 파일의 데이터를 성공적으로 변환했습니다.")
+        default:
+            return
+        }
+    }
 }
